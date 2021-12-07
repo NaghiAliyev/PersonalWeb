@@ -558,25 +558,29 @@ a:hover{
 .banner_social_link {
     margin-top: 12px;
 }
-.banner_social_link li {
-    display: inline-block;
-    margin: 0 5px;
-}
-.banner_social_link a {
-    position: relative;
-    display: block;
-    width: 45px;
-	color: #000;
-	font-size: 22px;
-    line-height: 45px;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: 0.3s;
-	z-index: 0;
-}
+
+    .banner_social_link li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    .banner_social_link a {
+        position: relative;
+        display: block;
+        width: 45px;
+        color: #000;
+        font-size: 22px;
+        line-height: 45px;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: 0.3s;
+        z-index: 0;
+    }
+
 .banner_bg_2 .banner_social_link a {
-	color: #fff;
+    color: #fff;
 }
+
 .banner_social_link a:before {
     content: '';
     position: absolute;
@@ -589,8 +593,9 @@ a:hover{
     -webkit-transform: scale(0);
     transform: scale(0);
     transition: 0.3s;
-	z-index: -1;
+    z-index: -1;
 }
+
 .banner_bg_2 .banner_social_link a:before {
     content: '';
     position: absolute;
@@ -600,17 +605,19 @@ a:hover{
     height: 100%;
     background: #fff;
 }
+
 .banner_social_link a:hover:before {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
-.banner_social_link a:hover{
-	color: #fff;
-}
-.banner_bg_2 .banner_social_link a:hover{
-	color: #000;
+
+.banner_social_link a:hover {
+    color: #fff;
 }
 
+.banner_bg_2 .banner_social_link a:hover {
+    color: #000;
+}
 /* Start Scroll-mouse */
 #home .mouse {
     position: absolute;
