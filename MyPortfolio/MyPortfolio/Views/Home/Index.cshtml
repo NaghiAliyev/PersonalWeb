@@ -1,0 +1,530 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- START BANNER-SHOW -->
+<section id="home" class="main_banner banner_bg_2">
+    <div class="display_table">
+        <div class="display_table_cell">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="banner_content text-center">
+                            <span class="sm_title">Xoş gəlmisiniz!</span>
+                            <h1 class="cd-headline clip">
+                                <span class="fw_300">Mən</span>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible fw_700">Nağı Əliyev</b>
+                                    <b class="fw_700">Backend Developerəm</b>
+                                </span>
+                            </h1>
+                            <div class="sub_title">
+                                <span>Veb Developer</span>
+                            </div>
+                            <ul class="banner_social_link">
+                                <li><a href="https://www.facebook.com/nagi.aliyev.50/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/naghi-aliyev-922a48217/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com/nagi_aliyev/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/NaghiAliyev" target="_blank"><i class="fa fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mouse_scroll">
+        <a href="#about" class="smoothScroll">
+            <div class="mouse">
+                <i class="ti-angle-double-down"></i>
+            </div>
+        </a>
+    </div>
+</section>
+<!-- END BANNER-SHOW -->
+<!-- START ABOUT -->
+<section id="about" class="dark_bg_1 section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-12 col-xs-12">
+                <div class="about_img">
+                    <img src="~/Assets/images/man.png" alt="about-img" />
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="about_content_area">
+                    <h5>Mənim adım Nağı Əliyevdir .</h5>
+                    <h3>Mən Backend Developerəm.</h3>
+                    <p>İşini sevən, hər zaman bir işi tam potensialı ilə görməyə çalışan və bundan zövq alan biriyəm.</p>
+                    <div class="about_me">
+                        <div class="name">
+                            <span>Ad və Soyad</span>
+                            Nağı Əliyev
+                        </div>
+                        <div class="age">
+                            <span>Yaş</span>
+                            @ViewBag.Age
+                        </div>
+                        <div class="Address">
+                            <span>Ünvan</span>
+                            Bakı, Azərbaycan.
+                        </div>
+                        <div class="phone">
+                            <span>Telefon Nömrəsi</span>
+                            +994 50 419 09 14
+                        </div>
+                        <div class="email">
+                            <span>E-Poçt</span>
+                            <a href="#">naghi.aliyev@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="about_btn">
+                        <a href="#contact" class="btn btn-default main_btn contact_btn dark_bg_btn smoothScroll">Əlaqə</a>
+                        <a href="#contact" class="btn btn-default contact_number dark_cn smoothScroll">+994 50-419-09-14</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END ABOUT -->
+<!-- START SERVICE -->
+<section id="service" class="dark_bg_2 section_padding pb_70">
+    <div class="container">
+        <div class="dark_heading section_heading text-center">
+            <h2>Xidmətlər</h2>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="service_slider owl-carousel">
+                    <div class="single_service">
+                        <div class="service_icon">
+                            <i class="ti-desktop"></i>
+                        </div>
+                        <h4>Veb Development</h4>
+                        <P>Veb səhifələrin düzəldilməsi</P>
+                    </div>
+                    <div class="single_service">
+                        <div class="service_icon">
+                            <i class="ti-cloud"></i>
+                        </div>
+                        <h4>Yayımlama</h4>
+                        <P>Səhifələrin yayımlanması</P>
+                    </div>
+                    <div class="single_service">
+                        <div class="service_icon">
+                            <i class="ti-layers-alt"></i>
+                        </div>
+                        <h4>Xüsusiləşdirmə</h4>
+                        <P>Səhifələrdə dəyişikliklərin edilməsi</P>
+                    </div>
+                </div>
+            </div> <!-- End Col -->
+        </div>
+    </div>
+</section>
+<!-- END SERVICE -->
+<!-- START PORTFOLIO -->
+<section id="portfolio" class="dark_bg_1 section_padding">
+    <div class="dark_heading section_heading text-center">
+        <h2>Portfolio</h2>
+        <p>Bu hissədə hazırladığım layihələrlə tanış ola bilərsiniz (Hələki bu hissə tam deyil).</p>
+    </div>
+
+    <div class="work_filter text-center wow fadeInDown">
+        <ul>
+            <li class="active" data-filter="*">Hamısı</li>
+            <li data-filter=".web_development">Veb Development</li>
+            <li data-filter=".hosting">Yayımlama</li>
+            <li data-filter=".customizability">Xüsusiləşdirmə</li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="work_content_area">
+            <div class="col-md-3 col-sm-12 col-xs-12 padding_0 element-item web_development">
+                <div class="box">
+                    <img src="~/Assets/images/portfolio/foundation_project_view.jpg" alt="" />
+                    <div class="box_content_area">
+                        <div class="hover_content">
+                            <h5><a href="#0" target="_blank">Pragmatech Foundation Project</a></h5>
+                            <span>Web Development</span>
+                            <div class="icon">
+                                <a href="~/Assets/images/portfolio/foundation_project_view.jpg" data-lightbox="images"><i class="ti-plus"></i></a>
+                            </div>
+                            <span class="date">Başlama vaxtı: 15.02.2021 <br> </span>
+                            <span class="date">Bitiş vaxtı: 27.04.2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12 padding_0 element-item hosting customizability">
+                <div class="box">
+                    <img src="~/Assets/images/portfolio/3reaze_view.jpg" alt="" />
+                    <div class="box_content_area">
+                        <div class="hover_content">
+                            <h5><a href="https://3reaze.com/" target="_blank">3re Azərbaycan</a></h5>
+                            <span>Düzəlişlər və Yayımlama</span>
+                            <div class="icon">
+                                <a href="~/Assets/images/portfolio/3reaze_view.jpg" data-lightbox="images"><i class="ti-plus"></i></a>
+                            </div>
+                            <span class="date">Başlama vaxtı: 03.06.2021 <br> </span>
+                            <span class="date">Bitiş vaxtı: 10.06.2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12 padding_0 element-item design Photography">
+                <div class="box">
+                    <img src="~/Assets/images/portfolio/4.jpg" alt="" />
+                    <div class="box_content_area">
+                        <div class="hover_content">
+                            <h5><a href="#0" target="_blank">Creative Project</a></h5>
+                            <span>Web Design</span>
+                            <div class="icon">
+                                <a href="~/Assets/images/portfolio/4.jpg" data-lightbox="images"><i class="ti-plus"></i></a>
+                            </div>
+                            <span class="date">Başlama vaxtı:<br> </span>
+                            <span class="date">Bitiş vaxtı:</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12 padding_0 element-item marketing Photography">
+                <div class="box">
+                    <img src="~/Assets/images/portfolio/5.jpg" alt="" />
+                    <div class="box_content_area">
+                        <div class="hover_content">
+                            <h5><a href="#0" target="_blank">Creative Project</a></h5>
+                            <span>Web Design</span>
+                            <div class="icon">
+                                <a href="~/Assets/images/portfolio/5.jpg" data-lightbox="images"><i class="ti-plus"></i></a>
+                            </div>
+                            <span class="date">Başlama vaxtı:<br> </span>
+                            <span class="date">Bitiş vaxtı:</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12 padding_0 element-item design marketing">
+                <div class="box">
+                    <img src="~/Assets/images/portfolio/6.jpg" alt="" />
+                    <div class="box_content_area">
+                        <div class="hover_content">
+                            <h5><a href="#0" target="_blank">Creative Project</a></h5>
+                            <span>Web Design</span>
+                            <div class="icon">
+                                <a href="~/Assets/images/portfolio/6.jpg" data-lightbox="images"><i class="ti-plus"></i></a>
+                            </div>
+                            <span class="date">Başlama vaxtı:<br> </span>
+                            <span class="date">Bitiş vaxtı:</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12 padding_0 element-item Photography design">
+                <div class="box">
+                    <img src="~/Assets/images/portfolio/7.jpg" alt="" />
+                    <div class="box_content_area">
+                        <div class="hover_content">
+                            <h5><a href="#0" target="_blank">Creative Project</a></h5>
+                            <span>Web Design</span>
+                            <div class="icon">
+                                <a href="~/Assets/images/portfolio/7.jpg" data-lightbox="images"><i class="ti-plus"></i></a>
+                            </div>
+                            <span class="date">Başlama vaxtı:<br> </span>
+                            <span class="date">Bitiş vaxtı:</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12 padding_0 element-item Photography">
+                <div class="box">
+                    <img src="~/Assets/images/portfolio/8.jpg" alt="" />
+                    <div class="box_content_area">
+                        <div class="hover_content">
+                            <h5><a href="#0" target="_blank">Creative Project</a></h5>
+                            <span>Web Design</span>
+                            <div class="icon">
+                                <a href="~/Assets/images/portfolio/8.jpg" data-lightbox="images"><i class="ti-plus"></i></a>
+                            </div>
+                            <span class="date">Başlama vaxtı:<br> </span>
+                            <span class="date">Bitiş vaxtı:</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12 padding_0">
+                <div class="box">
+                    <img src="~/Assets/images/portfolio/1.jpg" alt="" />
+                    <div class="box_content_area">
+                        <div class="hover_content">
+                            <h5><a href="#0" target="_blank">Creative Project</a></h5>
+                            <span>Web Design</span>
+                            <div class="icon">
+                                <a href="~/Assets/images/portfolio/1.jpg" data-lightbox="images"><i class="ti-plus"></i></a>
+                            </div>
+                            <span class="date">Başlama vaxtı:<br> </span>
+                            <span class="date">Bitiş vaxtı:</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="port_content_button text-center">
+            <a href="#0" class="btn btn-default main_btn dark_bg_btn">daha çox göstər</a>
+        </div>
+    </div>
+</section>
+<!-- END PORTFOLIO -->
+<!-- START RESUM -->
+<section id="resume" class="dark_bg_1 section_padding pb_70">
+    <div class="container">
+        <div class="dark_heading section_heading text-center">
+            <h2>Təhsil & Təcrübə</h2>
+            <p> </p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="resume-container wow fadeInLeft">
+                    <div class="row">
+                        <h3><i class="icon-trophy"></i>Təhsil:</h3>
+                        <div class="col-md-12">
+                            <div class="single_resume">
+                                <strong>2018</strong>
+                                <h5>İnformasiya Texnologiyaları,Bakı Mühəndislik Universiteti</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="single_resume">
+                                <strong>2020</strong>
+                                <strong></strong>
+                                <h5>Pragmatech</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="resume-container wow fadeInRight">
+                    <div class="row">
+                        <h3><i class="icon-briefcase"></i>Təcrübə:</h3>
+                        <div class="col-md-12">
+                            <div class="single_resume">
+                                <strong>2020</strong>
+                                <strong> - </strong>
+                                <strong>2021</strong>
+                                <h5>Pragmatech Foundation </h5>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="single_resume">
+                                <strong>2021</strong>
+                                <h5>Pragmatech, Backend Module (Asp.Net) </h5>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END RESUM -->
+<!-- START CTA -->
+<section class="cta_section dark_overlay section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="cta_content">
+                    <h3>Mən Freelance üçün hazıram !</h3>
+                    <a href="#contact" class="btn btn-default main_btn dark_bg_btn smoothScroll"><span>Əlaqə</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END CTA -->
+<!-- START TESTIMONIALS -->
+<section id="testimonial_area" class="dark_bg_2 section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="testimonial_area owl-carousel">
+                    <div class="single_testimonial">
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae.
+                        </p>
+                        <div class="pic">
+                            <img src="~/Assets/images/testimonial/1.jpg" alt="" />
+                        </div>
+                        <h5 class="title">William Baker</h5>
+                        <span class="post">Developer</span>
+                    </div><!-- end Single Testimonials -->
+
+                    <div class="single_testimonial">
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae.
+                        </p>
+                        <div class="pic">
+                            <img src="~/Assets/images/testimonial/2.jpg" alt="" />
+                        </div>
+                        <h5 class="title">James Baker</h5>
+                        <span class="post">Designer</span>
+                    </div><!-- end Single Testimonials -->
+
+                    <div class="single_testimonial">
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae.
+                        </p>
+                        <div class="pic">
+                            <img src="~/Assets/images/testimonial/3.jpg" alt="" />
+                        </div>
+                        <h5 class="title">William Baker</h5>
+                        <span class="post">Developer</span>
+                    </div><!-- end Single Testimonials -->
+
+                    <div class="single_testimonial">
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat quaerat quas quis ratione rerum sint sit vitae.
+                        </p>
+                        <div class="pic">
+                            <img src="~/Assets/images/testimonial/4.jpg" alt="" />
+                        </div>
+                        <h5 class="title">James Baker</h5>
+                        <span class="post">Designer</span>
+                    </div><!-- end Single Testimonials -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END TESTIMONIALS -->
+<!-- START BLOG -->
+<section id="blog" class="dark_bg_1 section_padding pb_70">
+    <div class="container">
+        <div class="dark_heading section_heading text-center">
+            <h2>Məqalələrim</h2>
+            <p>Bu hissədə hazırladığım məqalələrlə tanış ola bilərsiniz (Hələki bu hissə tam deyil).</p>
+        </div>
+        <div class="row">
+            <div class="blog_slide_area">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single_blog">
+                        <div class="blog-thumb">
+                            <div class="blog-image">
+                                <img src="~/Assets/images/blog/blog_dunder_methods.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="blog-info">
+                                <small><i class="fa fa-clock-o"></i>Mart 8, 2021</small>
+                                <span>| Medium</span>
+                                <a href="https://naghi-aliyev.medium.com/dunder-v%C9%99-ya-magic-methodlar-b4364c932d9b"><h4>Dunder və ya Magic methodlar.</h4></a>
+                                <p>Pythonda olan "Dunder" və yaxud da "Magic" metodlar olaraq tanınan metodlar haqqında məqalə.</p>
+                                <a href="https://naghi-aliyev.medium.com/dunder-v%C9%99-ya-magic-methodlar-b4364c932d9b" class="btn btn-default blog_btn main_btn dark_bg_btn" target="_blank">Ardını oxu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single_blog">
+                        <div class="blog-thumb">
+                            <div class="blog-image">
+                                <img src="~/Assets/images/blog/blog2.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="blog-info">
+                                <small><i class="fa fa-clock-o"></i>December 31, 2019</small>
+                                <span>| lifestyle</span>
+                                <a href="#0"><h4>Merry Christmas Surprise</h4></a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt quidem illum repellat</p>
+                                <a href="#0" class="btn btn-default blog_btn main_btn dark_bg_btn" target="_blank">Ardını oxu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single_blog">
+                        <div class="blog-thumb">
+                            <div class="blog-image">
+                                <img src="~/Assets/images/blog/blog3.jpg" class="img-responsive" alt="">
+                            </div>
+                            <div class="blog-info">
+                                <small><i class="fa fa-clock-o"></i>December 31, 2019</small>
+                                <span>| lifestyle</span>
+                                <a href="#0"><h4>Top Branding Iphone 7</h4></a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt quidem illum repellat</p>
+                                <a href="#0" class="btn btn-default blog_btn main_btn dark_bg_btn" target="_blank">Ardını oxu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END BLOG -->
+<!-- START CONTACT -->
+<section id="contact" class="dark_bg_2 section_padding">
+    <div class="container">
+        <div class="dark_heading section_heading text-center">
+            <h2>Əlaqə</h2>
+            <p>Mənimlə əlaqə saxlamaq üçün aşağıdakı vasitələrdən istifadə edə bilərsiniz.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-4 col-xs-12">
+                <div class="contact_details pb_0">
+                    <div class="single_contact">
+                        <i class="fa fa-map-marker"></i>
+                        <h5>Ünvan</h5>
+                        <p>Bakı, Azərbaycan</p>
+                    </div>
+                    <div class="single_contact">
+                        <i class="fa fa-envelope"></i>
+                        <h5>E-Poçt</h5>
+                        <p>naghi.aliyev@gmail.com</p>
+                    </div>
+                    <div class="single_contact">
+                        <i class="fa fa-phone"></i>
+                        <h5>Telefon</h5>
+                        <p>+994 50-419-09-14</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9 col-sm-8 col-xs-12">
+                <div class="contact">
+                    <form id="contact-form" method="post" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="input_padding text-center">
+                                <div class="form-group col-sm-6">
+                                    <input type="text" name="name" class="form-control" id="first-name" placeholder="Ad *" required="required">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="E-Poçt *" required="required">
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <input type="text" name="subject" class="form-control" id="subject" placeholder="Başlıq *" required="required">
+                                </div>
+                                <div class="form-group col-sm-12 mab-none">
+                                    <textarea rows="8" name="message" class="form-control" id="description" placeholder="Məktubunuz ..." required="required"></textarea>
+                                </div>
+                                <div class="form-group mb0 col-sm-12">
+                                    <div class="actions">
+                                        <button type="submit" value="Məktubu Göndər" name="submit" id="submitButton" class="btn btn-default main_btn dark_bg_btn" title="Click here to submit your message!">Məktubu Göndər</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- END COL -->
+        </div><!--- END ROW -->
+    </div><!--- END CONTAINER -->
+</section>
+<!-- END CONTACT -->

@@ -1,0 +1,94 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nağı Əliyev Şəxsi Portfoliosu</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,700i,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700,800,900" rel="stylesheet">
+    <link href="~/Assets/fonts/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Assets/fonts/etline.css" rel="stylesheet" />
+    <link href="~/Assets/fonts/themify-icons.css" rel="stylesheet" />
+    <link href="~/Assets/css/lightbox.min.css" rel="stylesheet" />
+    <link href="~/Assets/css/plugins.css" rel="stylesheet" />
+    <link href="~/Assets/css/responsive.css" rel="stylesheet" />
+    <link href="~/Assets/css/style.css" rel="stylesheet" />
+    <link rel="icon" href="~/Assets/images/logo2.png" type="image/png">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+
+    <!-- START PRELOADER -->
+    <div class="preloader dark_preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <!-- END PRELOADER -->
+    <!-- START NAVBAR -->
+    <div class="navbar navbar-default navbar-fixed-top menu-top dark_bg_menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand"><img src="~/Assets/images/logo2.png" alt="logo"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home" class="smoothScroll">Əsas Səhifə</a></li>
+                    <li><a href="#about" class="smoothScroll">Haqqımda</a></li>
+                    <li><a href="#service" class="smoothScroll">Xidmətlər</a></li>
+                    <li><a href="#portfolio" class="smoothScroll">İşlərim</a></li>
+                    <li><a href="#resume" class="smoothScroll">Biliklərim</a></li>
+                    <li><a href="#blog" class="smoothScroll">Məqalələrim</a></li>
+                    <li><a href="#contact" class="smoothScroll">Əlaqə</a></li>
+                </ul>
+            </div>
+        </div><!--- END CONTAINER -->
+    </div>
+    <!-- END NAVBAR -->
+    @RenderBody()
+
+    <!-- START FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="copy-text">
+                <p>CopyRight © 2021 Naghi Aliyev All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+
+    <!-- Latest jQuery -->
+    <script src="~/Assets/js/jquery.min.js"></script>
+    <script src="~/Assets/js/bootstrap.min.js"></script>
+    <script src="~/Assets/js/owl.carousel.min.js"></script>
+    <script src="~/Assets/js/modernizr-2.8.3.min.js"></script>
+    <script src="~/Assets/js/jquery.inview.min.js"></script>
+    <script src="~/Assets/js/isotope.pkgd.min.js"></script>
+    <script src="~/Assets/js/animated-headline.js"></script>
+    <script src="~/Assets/js/lightbox.min.js"></script>
+    <script src="~/Assets/js/SmoothScroll.js"></script>
+    <script src="~/Assets/js/form-contact.js"></script>
+    <script src="~/Assets/js/jquery.hoverdir.js"></script>
+    <script src="~/Assets/js/scrolltopcontrol.js"></script>
+    <script src="~/Assets/js/wow.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $(' .box ').each(function () {
+                $(this).hoverdir({
+                    hoverDelay: 50,
+                    inverse: true
+                });
+            });
+
+        });
+    </script>
+    <script src="~/Assets/js/main.js"></script>
+</body>
+</html>

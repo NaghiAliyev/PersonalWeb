@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace MyPortfolio.Controllers
+{
+    public class HomeController : Controller
+    {
+        public ActionResult Index()
+        {
+            string d = Request.Params["year"];
+            ViewBag.Age = Convert.ToInt32(d) - 2001;
+            return View();
+        }
+    }
+}
